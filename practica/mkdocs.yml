@@ -1,0 +1,42 @@
+site_name: Practica MkDocs
+nav:
+  - Home: index.md
+  - SI: sistemas_informaticos.md
+  - BBDD: base_de_datos.md
+  - Lenjuage: lenjuage_marcas.md
+  - Entornos: entornos.md
+  - Proyecto_I: proyecto_intermodular.md
+
+theme:
+  features:
+    - content.action.edit
+    - content.action.view
+
+  name: 'material'
+  palette:
+    primary: 'black'
+    accent: 'pink'
+    secundary: 'red'
+  font:
+    text: 'Roboto'
+  google_analytics:
+    property: 'UA-12345678-9'
+    auto: true
+
+plugins:
+  - search
+
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - codehilite:
+      guess_lang: false
+
+repo_url: 'https://github.com/Mauro-vs'
+repo_name: 'GitHub'
+edit_uri: 'edit/main/docs/'
+
+use_directory_urls: true
+strict: true
